@@ -1,10 +1,12 @@
+// src/components/WaterPage.js
 import React from 'react';
+import TopBar from './TopBar';
 
 const WaterPage = () => {
   return (
     <div>
-      <h1>Water Page</h1>
-      {/* Add your water control logic here */}
+      <TopBar />
+      <h1>Water Control Page</h1>
     </div>
   );
 };

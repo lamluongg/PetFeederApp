@@ -1,0 +1,21 @@
+/* TopBar.css */
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0; /* Ensure it starts from the left edge */
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+  display: flex;
+  justify-content: flex-start; /* Align text to the left */
+  padding: 1rem 3rem 1rem 24rem; /* Add padding to top, right, bottom, and left */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 0.6rem; /* Slightly smaller font */
+  z-index: 1000; /* Ensure it stays above other content */
+  font-family: 'Lato', sans-serif; /* Use Lato font */
+}
+
+.top-bar a {
+  text-decoration: none;
+  color: black;
+  margin-right: 2rem; /* Adjust margin for spacing between links */
+}
