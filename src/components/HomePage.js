@@ -9,7 +9,7 @@ const HomePage = () => {
     <div className="home-container">
       <TopBar />
       <div className="image-section">
-        <img src="/dog.jpeg" alt="Dog running on beach" className="header-image" />
+        <img src="/bruh2.jpg" alt="Dog running on beach" className="header-image" />
         <div className="welcome-text">
           <h1>Welcome!</h1>
           <p>Bruin Engineers Pet Feeder</p>
