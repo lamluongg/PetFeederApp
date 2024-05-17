@@ -2,26 +2,27 @@
 .top-bar {
   position: fixed;
   top: 0;
-  left: 0; /* Ensure it starts from the left edge */
+  left: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.200); /* Transparent background */
+  height: 60px; /* Fixed height */
+  background-color: rgb(76, 124, 246); /* Baby blue background color */
   display: flex;
-  align-items: center; /* Vertically center the text */
-  padding: 2rem 70%; /* Adjust right padding to move text to the right */
+  align-items: center;
+  padding: 1rem 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-size: 1.2rem; /* Adjust font size */
-  z-index: 1000; /* Ensure it stays above other content */
-  font-family: 'Lato', sans-serif; /* Use Lato font */
+  font-size: 1.2rem;
+  z-index: 1000;
+  font-family: 'Lato', sans-serif;
 }
 
 .top-bar a {
   text-decoration: none;
   color: black;
-  margin-left: 2rem; /* Adjust margin for spacing between links */
+  margin-left: 2rem;
   display: flex;
-  align-items: center; /* Vertically center the text inside the link */
+  align-items: center;
 }
 
 .top-bar a:hover {
-  color: #007bff; /* Change color on hover */
+  color: #007bff;
 }
