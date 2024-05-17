@@ -51,10 +51,11 @@ html, body {
 
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Center the items */
     align-items: center;
-    width: 100%; /* Ensure the container spans the full width */
+    width: 50%; /* Ensure the container spans the full width */
     flex: 1; /* Ensure the container takes up the remaining space */
+    gap: 100px; /* Adjust the gap value to control spacing */
 }
 
 .item {
@@ -64,9 +65,9 @@ html, body {
 }
 
 .item img {
-    width: 50%; /* Increase the width percentage to make the image larger */
+    width: 90%; /* Increase the width percentage to make the image larger */
     height: auto;
-    margin-top: 330px; /* Add margin to move the image down */
+    margin-top: 410px; /* Add margin to move the image down */
     margin-bottom: 10px;
 }
 
