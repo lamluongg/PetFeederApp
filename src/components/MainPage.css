@@ -18,7 +18,7 @@ html, body {
     align-items: center;
     justify-content: center;
     height: 100vh; /* Ensure the main-page fills the viewport height */
-    background-image: url('../assets/kitchen.webp'); /* Add your background image path here */
+    background-image: url('../assets/kitchenchloe.webp'); /* Add your background image path here */
     background-size: cover; /* Ensure the background image covers the entire page */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
@@ -72,7 +72,23 @@ html, body {
 }
 
 .item button {
-    padding: 10px 20px;
+    padding: 12px 24px; /* Adjust padding for better aesthetics */
     font-size: 16px;
     cursor: pointer;
+    background: linear-gradient(135deg, #6ab04c, #4CAF50); /* Add gradient background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Slightly increase border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a more subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.item button:hover {
+    background: linear-gradient(135deg, #57a845, #45a049); /* Darker gradient on hover */
+}
+
+.item button:active {
+    background: linear-gradient(135deg, #4c8e41, #3e8e41); /* Even darker gradient on active */
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); /* Smaller shadow */
+    transform: translateY(2px); /* Slightly move button down */
 }
