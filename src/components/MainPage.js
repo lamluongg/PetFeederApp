@@ -1,7 +1,9 @@
 // src/components/MainPage.js
 import React from 'react';
 import './MainPage.css';
-import emptyBowl from '../assets/25.PNG'; // Adjust the path as needed
+import food25 from '../assets/food25.PNG'; // Adjust the path as needed
+import water25 from '../assets/water25.PNG'; // Adjust the path as needed
+
 
 const MainPage = () => {
   const handleDispenseFood = () => {
@@ -16,11 +18,11 @@ const MainPage = () => {
     <div className="main-page">
       <div className="container">
         <div className="item">
-          <img src={emptyBowl} alt="Food Bowl" />
+          <img src={food25} alt="Food Bowl" />
           <button onClick={handleDispenseFood}>Dispense Food</button>
         </div>
         <div className="item">
-          <img src={emptyBowl} alt="Water Bowl" />
+          <img src={water25} alt="Water Bowl" />
           <button onClick={handleDispenseWater}>Dispense Water</button>
         </div>
       </div>
