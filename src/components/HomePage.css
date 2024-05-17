@@ -14,7 +14,7 @@ html, body {
   position: relative;
   width: 100%;
   height: 80vh; /* Make the image cover the entire viewport height */
-  margin-top: 0; /* Ensure no margin at the top */
+  margin-top: 87px; /* Ensure no margin at the top */
 }
 
 .header-image {

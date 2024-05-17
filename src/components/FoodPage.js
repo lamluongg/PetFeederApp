@@ -1,38 +1,39 @@
-// src/components/HomePage.js
+// src/components/WaterPage.js
 import React from 'react';
-import { Link } from 'react-router-dom';
 import TopBar from './TopBar';
-import './HomePage.css';
+import './WaterPage.css';
 
-const HomePage = () => {
+const FoodPage = () => {
   return (
-    <div className="home-container">
+    <div className="water-container">
       <TopBar />
       <div className="image-section">
-        <img src="/image.png" alt="Dog running on beach" className="header-image" />
-        <div className="welcome-text">
-          <h1>Welcome!</h1>
-          <p>Bruin Engineers Pet Feeder</p>
+        <img src="rabbitWater.jpg" alt="Water background" className="header-image" />
+        <div className="water-text">
+          <h1>Water Control</h1>
+          <p>Manage your pet's water intake</p>
         </div>
       </div>
       <div className="content-section">
-        <div className="food-section">
-          <img src="/food-image.png" alt="Food" className="icon" />
-          <h2>Food</h2>
-          <Link to="/food">
-            <button className="control-button">Food Control Page</button>
-          </Link>
-        </div>
-        <div className="water-section">
-          <img src="/water-image.png" alt="Water" className="icon" />
-          <h2>Water</h2>
-          <Link to="/water">
-            <button className="control-button">Water Control Page</button>
-          </Link>
+        <div className="dispense-section">
+          <div className="dispense-item">
+            <img src="clock.jpg" alt="Time of Dispensal" className="dispense-icon" />
+            <div className="dispense-text">
+              <h2>Time of Dispensal</h2>
+              <input type="text" placeholder="Enter time..." className="dispense-input" />
+            </div>
+          </div>
+          <div className="dispense-item">
+            <img src="foodScale.jpg" alt="Amount of Dispensal" className="dispense-icon" />
+            <div className="dispense-text">
+              <h2>Amount of Dispensal</h2>
+              <input type="number" placeholder="Enter amount..." className="dispense-input" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default HomePage;
+export default FoodPage;
