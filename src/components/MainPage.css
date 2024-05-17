@@ -1,0 +1,77 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Disable scrolling */
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../assets/PeachesForBreakfast-Regular.ttf') format('truetype'); /* Correct format */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main-page {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensure the main-page fills the viewport height */
+    background-image: url('../assets/kitchen.webp'); /* Add your background image path here */
+    background-size: cover; /* Ensure the background image covers the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-attachment: fixed; /* Make the background image fixed in place */
+    position: relative; /* Required for pseudo-element positioning */
+}
+
+.main-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent black */
+    z-index: 0; /* Ensure it is behind the content */
+}
+
+.main-page > * {
+    position: relative; /* Ensure the content is above the overlay */
+    z-index: 1;
+}
+
+.main-page h1 {
+    margin-bottom: 40px;
+    font-family: 'CustomFont', 'Calibri', sans-serif; /* Apply CustomFont with fallback to Calibri */
+    font-size: 7em; /* Increase the font size */
+    color: #e0dbd1 ;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%; /* Ensure the container spans the full width */
+    flex: 1; /* Ensure the container takes up the remaining space */
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item img {
+    width: 50%; /* Increase the width percentage to make the image larger */
+    height: auto;
+    margin-top: 330px; /* Add margin to move the image down */
+    margin-bottom: 10px;
+}
+
+.item button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
