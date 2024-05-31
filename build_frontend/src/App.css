@@ -1,0 +1,16 @@
+/* src/App.css */
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Disable scrolling */
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make sure the App fills the viewport height */
+    text-align: center;
+  }
+  
