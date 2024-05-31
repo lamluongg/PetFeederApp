@@ -92,3 +92,67 @@ html, body {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); /* Smaller shadow */
     transform: translateY(2px); /* Slightly move button down */
 }
+
+.help-button {
+    position: fixed;
+    top: 20px;
+    right: 40px; /* More inward */
+    background-color: #f8f9fa;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%; /* Circular button */
+    font-size: 24px;
+    color: #5c67f2; /* Adjusted to better match the theme */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* Adjusted shadow for depth */
+  }
+  
+  .dropdown-menu {
+    position: fixed;
+    top: 70px;
+    right: 40px;
+    background-color: #f4f1ec; /* Creamy color to match the kitchen */
+    border: 1px solid #deb887; /* Warm border color */
+    border-radius: 8px; /* Smoothed corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Softer shadow */
+    width: 200px; /* Maintain narrower width */
+    display: none;
+    padding: 15px; /* Increased padding for better text visibility */
+    overflow: auto;
+    font-family: 'CustomFont', sans-serif; /* Custom font for thematic consistency */
+    color: #6f4e37; /* Dark brown text color */
+}
+
+.dropdown-menu.active {
+    display: block;
+}
+
+.dropdown-menu h4, .grid-text {
+    font-size: 40px; /* Unified large font size for all text */
+    color: #8b4513; /* Darker shade for better readability */
+    margin-bottom: 10px; /* Space below headings */
+    margin-top: 10px; /* Space above headings */
+    margin-left: 20px; /* Increased space between image and text for better separation */
+
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the items horizontally */
+}
+
+.grid-item {
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Horizontal alignment */
+    margin-bottom: 15px; /* Space between items */
+    width: 100%; /* Full width to align text next to the image */
+}
+
+.grid-item img {
+    width: 80px; /* Image width adjusted */
+    height: auto; /* Maintain aspect ratio */
+}
+
+  
