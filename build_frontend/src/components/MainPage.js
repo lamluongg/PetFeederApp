@@ -73,12 +73,10 @@ const MainPage = () => {
       </div>
       <div className="container">
         <div className="item">
-          <img src={food25} alt="Food Bowl" />
-          {/* <button onClick={handleDispenseFood}>Dispense Food</button> */}
+          <img src={food25} alt="Food Bowl" onClick={handleDispenseFood} className="hoverable" />
         </div>
         <div className="item">
-          <img src={water50} alt="Water Bowl" />
-          {/* <button onClick={handleDispenseWater}>Dispense Water</button> */}
+          <img src={water25} alt="Water Bowl" onClick={handleDispenseWater} className="hoverable" />
         </div>
       </div>
     </div>

@@ -93,6 +93,28 @@ html, body {
     transform: translateY(2px); /* Slightly move button down */
 }
 
+.hoverable {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: inline-block;  /* This ensures the transform applies correctly */
+  }
+
+  .hoverable:hover {
+    animation: shakeRotate 0.5s cubic-bezier(.36,.07,.19,.97) both;
+  }
+
+  @keyframes shakeRotate {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: rotate(-5deg);
+    }
+    20%, 40%, 60%, 80% {
+      transform: rotate(5deg);
+    }
+  }
+
 .help-button {
     position: fixed;
     top: 20px;
