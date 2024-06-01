@@ -18,7 +18,7 @@ html, body {
     align-items: center;
     justify-content: center;
     height: 100vh; /* Ensure the main-page fills the viewport height */
-    background-image: url('../assets/kitchenchloe.webp'); /* Add your background image path here */
+    background-image: url('../assets/kitchenBackground.webp'); /* Add your background image path here */
     background-size: cover; /* Ensure the background image covers the entire page */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
@@ -58,17 +58,42 @@ html, body {
     gap: 100px; /* Adjust the gap value to control spacing */
 }
 
-.item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#foodBowl {
+    flex: 1; /* Ensures each item can expand to fill the space */
+    text-align: center; /* Center the text and content within each bowl */
+    padding-top: var(--bowl-padding-top, 0px); /* Default padding top */
+    padding-bottom: var(--bowl-padding-bottom, 0px); /* Default padding bottom */
+    padding-left: var(--bowl-padding-left, 0px); /* Default padding left */
+    padding-right: var(--bowl-padding-right, 0px); /* Default padding right */
+}
+
+
+.waterBowl {
+    flex: 1; /* Ensures each item can expand to fill the space */
+    text-align: center; /* Center the text and content within each bowl */
+    padding-top: var(--waterBowl-padding-top, 0px); /* Default padding top, can adjust */
+    padding-bottom: 1100px; /* Large bottom padding as already defined */
+    padding-left: var(--waterBowl-padding-left, 0px); /* Custom padding left */
+    padding-right: var(--waterBowl-padding-right, 0px); /* Custom padding right */
+    margin-top: var(--waterBowl-margin-top, 0px); /* Allow for margin adjustments */
+    width: 100%; /* Unusually large width, consider adjusting if this was a typo */
 }
 
 .item img {
-    width: 90%; /* Increase the width percentage to make the image larger */
+    width: 90%; /* General setting for all images within items */
     height: auto;
-    margin-top: 410px; /* Add margin to move the image down */
+    margin-top: 400px; /* Adjusted to a smaller value for better layout control */
     margin-bottom: 10px;
+    margin-left: 60px;
+
+}
+
+/* Specific styles for the water bowl image */
+.item img[alt="waterBowl"] {
+    width: 90%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 290px; /* Increase the margin-top to push it lower or adjust as needed */
+    margin-bottom: 20px; /* Manage the space below the image */
 }
 
 .item button {
