@@ -68,7 +68,7 @@ const MainPage = () => {
             <div className="grid-text">100% Full</div>
           </div>
         </div>
-        <h4>Hover Effect on Bowl</h4>
+        <h4>Click on Bowl to Dispense! Yay!</h4>
         {/* <img src={hoverEffect} alt="Hover effect on bowl" /> */}
       </div>
       <div className="container">
