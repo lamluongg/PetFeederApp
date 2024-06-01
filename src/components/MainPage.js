@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './MainPage.css';
 import food25 from '../assets/food25.PNG'; // Adjust the path as needed
-import water0 from '../assets/water0.PNG'; // Path to the 0% water level image
-import water25 from '../assets/water25.PNG'; // Path to the 25% water level image
-import water50 from '../assets/water50.PNG'; // Path to the 50% water level image
-import water100 from '../assets/water100.PNG'; // Path to the 100% water level image
+import water0 from '../assets/0.png'; // Path to the 0% water level image
+import water25 from '../assets/25.png'; // Path to the 25% water level image
+import water50 from '../assets/50.png'; // Path to the 50% water level image
+import water100 from '../assets/100.png'; // Path to the 100% water level image
 
 const MainPage = () => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -96,10 +96,10 @@ const MainPage = () => {
       </div>
       <div className="container">
         <div className="item">
-          <img src={food25} alt="Food Bowl" onClick={handleDispenseFood} className="hoverable" />
+          <img src={food25} alt="foodBowl" onClick={handleDispenseFood} className="hoverable" />
         </div>
         <div className="item">
-          <img src={getWaterImage()} alt="Water Bowl" onClick={handleDispenseWater} onMouseEnter={fetchWaterLevel} className="hoverable" />
+          <img src={getWaterImage()} alt="waterBowl" onClick={handleDispenseWater} onMouseEnter={fetchWaterLevel} className="hoverable" />
         </div>
       </div>
     </div>
