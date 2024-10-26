@@ -17,4 +17,4 @@ To use the app, navigate to the deployed web application URL and follow the on-s
 For contributions, please fork the repository and submit a pull request.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+This project is licensed under the MIT License
